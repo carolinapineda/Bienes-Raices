@@ -1,0 +1,25 @@
+{
+  "name": "bienes-raices",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto de Node.js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "MVC",
+    "Pug",
+    "Tailwind",
+    "MySQL"
+  ],
+  "author": "Carolina Pineda",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "server": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
