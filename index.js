@@ -5,8 +5,13 @@ import usuarioRoutes from './routes/usuarioRoutes.js';
 // Crear la app
 const app = express();
 
+// Habilitar Pug
+app.set('view engine', 'pug');
+app.set('views', './views');
+
 // Routing
-app.get('/', usuarioRoutes);
+// get busca especificamente una ruta con ('/'), mientras que use busca todas las rutas que tengan o coincidan con ('/')
+app.use('/auth', usuarioRoutes);
 
 // Definir un puerto ny arrancarlo
 const port = 3000;
