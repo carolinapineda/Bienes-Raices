@@ -9,6 +9,9 @@ const app = express();
 app.set('view engine', 'pug');
 app.set('views', './views');
 
+// Carpeta Publica 
+app.use(express.static('public'));
+
 // Routing
 // get busca especificamente una ruta con ('/'), mientras que use busca todas las rutas que tengan o coincidan con ('/')
 app.use('/auth', usuarioRoutes);
