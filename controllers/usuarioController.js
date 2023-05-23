@@ -2,6 +2,7 @@
 // Funcion de controlador
 const formularioLogin = (req, res) =>{
     res.render('auth/login',{
+        pagina: 'Iniciar Sesion'
     });
 }
 
@@ -11,8 +12,15 @@ const formularioRegistro = (req, res) =>{
     });
 }
 
+const formularioOlvidePassword = (req, res) =>{
+    res.render('auth/registro',{
+        pagina: 'Crear Cuenta'
+    });
+}
+
 
 export {
     formularioLogin,
-    formularioRegistro
+    formularioRegistro,
+    formularioOlvidePassword
 }
