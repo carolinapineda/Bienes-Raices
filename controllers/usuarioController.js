@@ -1,3 +1,4 @@
+import Usuario from '../models/Usuario.js'
 
 // Funcion de controlador
 const formularioLogin = (req, res) =>{
@@ -13,10 +14,12 @@ const formularioRegistro = (req, res) =>{
 }
 
 const registrar = (req, res) =>{
+
+    console.log(req.body) 
  
-    console.log('registrando ..')
-    // Siempre que se va a leer la informacion que se ingresa a un formulario en express se utiliza el req.body
-    console.log(req.body)
+    // const usuario = await Usuario.create(req.body)
+
+    // res.json(usuario)
 }
 
 const formularioOlvidePassword = (req, res) =>{
